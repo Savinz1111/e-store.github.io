@@ -1,0 +1,78 @@
+
+.box-card{
+    width: 90%;
+    height: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    /* background-color: red; */
+    & .cards{
+        /* width: 100%; */
+        height: 400px;
+        padding: 10px;
+        /* background-color: pink; */
+        border: 0.5px solid #33333394;
+        margin-top: 20px;
+        & .title{
+            width: 100%;
+            height: 10%;
+            /* background-color: rgb(10, 228, 134); */
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+        & .image{
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: start;
+            overflow: hidden;
+            & img{
+                height: 100%;
+                width: auto;
+                cursor: pointer;
+                transition: ease-in-out 0.3s;
+            }
+        }
+        & .image:hover img{
+            transform: scale(1.08);
+        }
+        & .price{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            /* background-color: rgb(220, 9, 65); */
+            justify-content: end;
+            align-items: center;
+            padding: 0 10px;
+            gap: 90px;
+            & span{
+                height: 100%;
+                /* background-color: pink; */
+                display: flex;
+                justify-content: start;
+                align-items: center;
+            }
+            & button{
+                border: none;
+                height: 100%;
+                padding: 10px;
+                display: flex;
+                background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+                border-radius: 5px;
+                justify-content: center;
+                align-items: center;
+                color: #000;
+                font-size: 14px;
+                font-weight: bold;
+                /* background-color: red; */
+            }
+            & button:hover{
+                background-image: linear-gradient(to right, #328ad6 0%, #32bbc2 100%);
+    
+            }
+            
+        }
+    }
+}
